@@ -1,0 +1,56 @@
+/* global */
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* background image */
+html {
+  background-image: url(..//images/background-img.png);
+}
+
+/* container */
+main.container{
+  background-color: white;
+  width: min(90vw, 400px);
+  margin: auto;
+  padding: 5rem 5rem 5rem 5rem;
+  border-radius:  0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* body */
+body{
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+/* header */
+header{
+  padding: 2rem 0 10rem;
+  text-align: center;
+}
+/* center */
+h2.center{
+  text-align: center;
+}
+/*buttons */
+div.buttons {
+  margin-top: 15%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+   
+}
+a:hover{
+  opacity: 0.7;
+}
