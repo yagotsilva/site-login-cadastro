@@ -1,5 +1,5 @@
 /* global */
-*{
+* {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
@@ -21,15 +21,58 @@ main.container{
 }
 
 /* body */
-body{
+body {
   font-family: 'Raleway', sans-serif;
   
 }
 
 /* header */
-header{
+header {
   padding: 2rem 0 10rem;
   text-align: center;
 }
 
 /* form */
+form input {
+  margin-top: 5px;
+  border: none;
+  background-color: whitesmoke;
+  padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+  font-size: medium;
+}
+
+form input:hover{
+  background-color: lightgrey;
+}
+
+form button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 88%;
+}
+
+form button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+form p {
+  margin-top: 15px;
+  font-size: 88%;
+  text-align: left;
+}
+
+form p.message {
+  font-size: smaller;
+  background-color: whitesmoke;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
