@@ -11,15 +11,20 @@ html {
 }
 
 /* container */
-main.container{
+main.container {
   background-color: white;
   width: min(90vw, 400px);
   margin: auto;
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 2.5rem 5rem 2.5rem 5rem;
   border-radius:  0.5rem 0.5rem 0.5rem 0.5rem;
   text-align: center;
 }
-
+.container p {
+  font-size: 120%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
 /* body */
 body {
   font-family: 'Raleway', sans-serif;
@@ -54,8 +59,8 @@ form button {
   border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   text-align: center;
-  margin-top: 20px;
-  font-size: 88%;
+  margin-top: 10px;
+  font-size: 100%;
 }
 
 form button:hover {
@@ -63,10 +68,11 @@ form button:hover {
   cursor: pointer;
 }
 
-form p {
+form#form p {
   margin-top: 15px;
-  font-size: 88%;
+  font-size: 90%;
   text-align: left;
+  margin-bottom: 1px;
 }
 
 form p.message {
@@ -76,3 +82,20 @@ form p.message {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+
+/* form p.massage.error{
+  color: red; 
+} */
+
+form label.sr-only{
+  position: absolute;
+    width: 1px;
+    height:1px;
+    padding: 0;
+    margin:-1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+

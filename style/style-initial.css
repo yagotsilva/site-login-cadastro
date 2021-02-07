@@ -1,5 +1,5 @@
 /* global */
-*{
+* {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
@@ -11,38 +11,42 @@ html {
 }
 
 /* container */
-main.container{
+main.container {
   background-color: white;
   width: min(90vw, 400px);
   margin: auto;
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 5rem 5rem 2rem 5rem;
   border-radius:  0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 /* body */
-body{
+body {
   font-family: 'Raleway', sans-serif;
   
 }
 
 /* header */
-header{
+header {
   padding: 2rem 0 10rem;
   text-align: center;
 }
 /* center */
-h2.center{
+h2.center {
   text-align: center;
 }
+h2.center p {
+  margin-bottom: 45px;
+}
+
 /*buttons */
 div.buttons {
-  margin-top: 15%;
+  margin-top: 15px;
   display: grid;
   align-items: center;
   justify-content: center;
 }
 
-a{
+a {
   background-color: purple;
   color: white;
   text-decoration: none;
@@ -51,6 +55,23 @@ a{
   text-align: center;
    
 }
-a:hover{
+a:hover {
   opacity: 0.7;
+}
+
+a.login {
+  background-color: white;
+  border: solid;
+  color: purple;
+}
+
+a.login:hover{
+  background-color: #ffc4ff;
+  opacity: 0.7;
+}
+
+div.buttons p{
+  font-size: 83%;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }

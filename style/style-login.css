@@ -15,9 +15,13 @@ main.container {
   background-color: white;
   width: min(90vw, 400px);
   margin: auto;
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 2.4rem 5rem 1.5rem 5rem;
   border-radius:  0.5rem 0.5rem 0.5rem 0.5rem;
   text-align: center;
+}
+main.container p {
+  font-size: 120%;
+  margin-bottom: 20px;
 }
 
 /* body */
@@ -41,20 +45,21 @@ form input {
   font-size: medium;
 }
 
-form input:hover{
+form input:hover {
   background-color: lightgrey;
 }
 
 form button {
-  width: 100px;
+  width: 150px;
+  height: 40px;
   color: white;
   background-color: purple;
   border: none;
   border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  font-size: 100%;
 }
 
 form button:hover {
@@ -62,8 +67,32 @@ form button:hover {
   cursor: pointer;
 }
 
-form p{
+form p {
     margin-top: 15px;
-    font-size: 88%;
+    font-size: 100%;
     text-align: left;
+}
+form p.message {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form label.sr-only{
+  position: absolute;
+    width: 1px;
+    height:1px;
+    padding: 0;
+    margin:-1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+a {
+  margin-top: 10px;
+}
+
+a:hover {
+  opacity:0.9;
+  cursor: pointer;
 }
