@@ -1,26 +1,34 @@
-var register = function() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
-  localStorage.setItem('name', name)
-  localStorage.setItem('email', email)
-  localStorage.setItem('password', password)
 
-}
-document.onsubmit = register;
+const registerClient = {
 
-
-var Form = document.getElementById('form')
-
-form.addEventListener('submit',function(event){
-  event.prenventDefault()
-
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
+  name() {
+    document.getElementById('name').value;
+  },
+  email() {
+    document.getElementById('email').value;
+  },
   
-})
+}
+ console.log(registerClient.name())
 
+const Form = {
+  name: document.querySelector('input#name'),
+  email: document.querySelector('input#email'),
 
+  getValues() {
+    return{
+      name: Form.name.value,
+      email: form.email.value
+    }
+  },
 
+  validateFields() {
+    const { name, email } = Form.getValues()
+    console.log(name)
+  },
 
+  submit(event) {
+    event.preventDefault()
+   
+  }
+}

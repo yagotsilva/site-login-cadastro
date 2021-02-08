@@ -20,27 +20,27 @@
 
     <p>Fill out the form below to be part of our community.</p>
 
-    <form id="form">
+    <form  id="form" action="" onsubmit="Form.submit(event)">
       <p>Name:</p>
       <label for="name" class="sr-only">Name</label>
       <!-- name -->
-      <input id="name" type="text" placeholder="name" required>
+      <input id="name" type="text" placeholder="name" >
       <p>E-mail:</p>
       <label for="email" class="sr-only">email</label>
       <!-- email -->
-      <input id="email" type="email" placeholder="email@exemplo.com" required>
+      <input id="email" type="email" placeholder="email@exemplo.com" >
       <p>Password:</p>
       <label for="password" class="sr-only">password</label>
       <!-- password -->
-      <input id="password" type="password" placeholder="password" required>
+      <input id="password" type="password" placeholder="password" >
       <p class="message">Password must be at least 6 digits</p>
       <br>
-      <button class="button" onsubmit="document.onsubmit()" onclick="btnClicked()">Create</button>
+      <button class="button">Create</button>
 
     </form>
 
   </main>
-  <script src="..//script/create.js"></script>
+  <script src="../script/create.js"></script>
 </body>
 
 </html>
