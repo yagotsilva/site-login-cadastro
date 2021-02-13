@@ -20,8 +20,8 @@ main.container {
   text-align: center;
 }
 main.container p {
-  font-size: 120%;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 /* body */
@@ -67,7 +67,7 @@ form button:hover {
   cursor: pointer;
 }
 
-form p {
+form.form p {
     margin-top: 15px;
     font-size: 100%;
     text-align: left;
@@ -75,6 +75,23 @@ form p {
 form p.message {
   text-align: center;
   margin-bottom: 10px;
+}
+p.msg{
+  margin-top: 1px;
+  margin-bottom: 1px;
+  visibility: hidden;
+}
+
+p.msg.error{
+  visibility: visible;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color:#ef5350;
+  color: black;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+  font-size: 17px;
+  text-align: center;
+  padding: auto;
 }
 
 form label.sr-only{
